@@ -14,13 +14,15 @@ console.log(firstName);
 */
 
 // LECTURE: Values and Variables
-let country = "United Kingdom";
-let continent = "Europe";
+/*
+const country = "United Kingdom";
+const continent = "Europe";
 let population = 80;
 
 console.log(country);
 console.log(continent);
 console.log(population);
+*/
 
 /*
 
@@ -48,10 +50,46 @@ console.log(typeof null)
 */
 
 // LECTURE: Data Types
-let isIsland = true;
-let language;
+/*
+const isIsland = true;
+const language = 'English';
 
 console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+*/
+
+/*
+let age = 30;
+age = 31;
+
+const birthYear = 1991;
+
+var job = "programmer";
+job = 'teacher'
+*/
+
+// LECTURE: let, const and var
+
+/*
+population = 81
+*/
+
+const massMark = 95;
+const heightMark = 1.88;
+
+const massJohn = 85;
+const heightJohn = 1.76;
+
+bmiMark = massMark / heightMark ** 2;
+bmiJohn = massJohn / heightJohn ** 2;
+
+let markHigherBMI;
+
+markHigherBMI = bmiMark > bmiJohn
+console.log('markHigherBMI : ' + markHigherBMI)
+
+
+
+
