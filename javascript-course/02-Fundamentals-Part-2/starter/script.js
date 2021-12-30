@@ -38,6 +38,7 @@ console.log(mixJuice)
 
 */
 
+/*
 function calcAge1(birthYear) {
     return 2037 - birthYear;
 }
@@ -63,3 +64,20 @@ const yearToRetirement = (birthYear, firstName) => {
 
 console.log(yearToRetirement(1983, 'Ashok'));
 console.log(yearToRetirement(1980, 'Bob'));
+*/
+
+/*
+
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+const avgDolphins = calcAverage(85, 54, 41);
+const avgKoalas = calcAverage(23, 34, 27);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins >= avgKoalas * 2) return "Dolphins";
+    if (avgKoalas >= avgDolphins * 2) return "Koalas";
+    return "no winner"
+}
+
+console.log(`${checkWinner(avgDolphins, avgKoalas)} wins (${avgDolphins} vs. ${avgKoalas})`);
+/*
