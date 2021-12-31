@@ -80,4 +80,87 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 }
 
 console.log(`${checkWinner(avgDolphins, avgKoalas)} wins (${avgDolphins} vs. ${avgKoalas})`);
+*/
+
 /*
+const friends = ["Ashok", "Jayany", "Shilpi"];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2020, 2021);
+console.log(years[2]);
+
+console.log(friends.length);
+console.log(years.length)
+
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Shrinjal"
+console.log(friends[friends.length - 1]);
+
+const firstName = "Ashok"
+const ashok = [firstName, "Mishra", 2021 - 1983, 'Engineer', friends]
+console.log(ashok)
+
+const calcAge3 = birthyear => 2037 - birthyear
+*/
+
+/*
+const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+const bills = [125, 555, 44];
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(tips);
+console.log(total);
+*/
+
+/*
+const ashok = {
+    firstName: "Ashok",
+    lastName: "Mishra",
+    birthYear: 1983,
+    profession: 'Engineer',
+    calcAge: function () {
+        this.age = 2021 - this.birthYear;
+    },
+    hasDriversLicense: false,
+    summary: function () {
+        this.calcAge();
+
+        return `${this.firstName} is a ${this.age}-year old ${this.profession}, and ${this.hasDriversLicense ? "he has a driver's license" : "he has no driver's license"}`
+    }
+};
+
+console.log(ashok.summary());
+*/
+
+/*
+const objectMark = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+}
+
+const objectJohn = {
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+}
+
+if (objectMark.calcBMI() > objectJohn.calcBMI()) {
+    console.log(`${objectMark.fullName}'s BMI (${objectMark.bmi}) is higher than ${objectJohn.fullName}'s BMI (${objectJohn.bmi})`)
+} else if (objectMark.calcBMI() < objectJohn.calcBMI()) {
+    console.log(`${objectJohn.fullName}'s BMI (${objectJohn.bmi}) is higher than ${objectMark.fullName}'s BMI (${objectMark.bmi})`)
+} else {
+    console.log(`${objectJohn.fullName}'s BMI (${objectJohn.bmi}) is equal to the ${objectMark.fullName}'s BMI (${objectMark.bmi})`)
+}
+*/
