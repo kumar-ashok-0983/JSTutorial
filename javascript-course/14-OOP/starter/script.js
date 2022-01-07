@@ -101,6 +101,7 @@ accounts.latest = 50;
 console.log(accounts.movements);
 */
 
+/*
 class PersonCl {
   constructor(fullName, birthYear) {
     this.fullName = fullName;
@@ -144,4 +145,67 @@ const walter = new PersonCl('Walter White', 1965);
 
 PersonCl.hey();
 
-//
+*/
+
+/*
+
+const PersonProto = {
+  calcAge() {
+    console.log(2037 - this.birthYear);
+  },
+
+  init(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  },
+};
+
+const steven = Object.create(PersonProto);
+console.log(steven);
+steven.name = 'Steven';
+steven.birthYear = 1983;
+steven.calcAge();
+
+console.log(steven.__proto__ === PersonProto);
+
+const Sarah = Object.create(PersonProto);
+Sarah.init('Sarah', 1979);
+Sarah.calcAge();
+
+*/
+
+/*
+class CarCl {
+  constructor(model, speed) {
+    this.model = model;
+    this.speed = speed;
+  }
+
+  get speed() {
+    return this._speed / 1.6;
+  }
+
+  set speed(speed) {
+    this._speed = speed * 1.6;
+  }
+
+  accelerate() {
+    console.log(`Previous speed was ${this.speed}`);
+    this.speed += 10;
+    console.log(`Speed after acceleration ${this.speed}`);
+  }
+
+  brake() {
+    console.log(`Previous speed was ${this.speed}`);
+    this.speed -= 5;
+    console.log(`Speed after brake ${this.speed}`);
+  }
+}
+
+const bmw = new CarCl('Ford', 120);
+console.log(bmw.speed);
+bmw.accelerate();
+bmw.brake();
+bmw.speed = 50;
+console.log(bmw.speed);
+*/
